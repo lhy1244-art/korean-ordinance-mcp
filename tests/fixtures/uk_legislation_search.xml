@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:leg="http://www.legislation.gov.uk/namespaces/legislation" xmlns:ukm="http://www.legislation.gov.uk/namespaces/metadata" xmlns:theme="http://www.legislation.gov.uk/namespaces/theme" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:parameters="http://a9.com/-/spec/opensearch/extensions/parameters/1.0/">
+			<id>http://www.legislation.gov.uk/search/data.feed?type=primary&amp;text=social</id>
+			<link rel="self" type="application/atom+xml" href="http://www.legislation.gov.uk/search/data.feed?type=primary&amp;text=social&amp;results-count=5"/>
+			
+			<link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/search/data.csv?type=primary&amp;text=social&amp;results-count=5"/>
+			<updated>2026-05-15T23:59:59Z</updated>
+			<title>Search Results</title>
+			<openSearch:Query role="request" searchTerms="social" leg:type="primary"> </openSearch:Query>
+			<openSearch:itemsPerPage>5</openSearch:itemsPerPage>
+			<openSearch:startIndex>1</openSearch:startIndex>
+			<leg:page>1</leg:page>
+			<leg:morePages>12</leg:morePages>
+			<leg:facets>
+								
+								<leg:facetTypes remove="http://www.legislation.gov.uk/search/data.feed?text=social&amp;results-count=5"/>
+								<leg:facetYears/>
+								<leg:facetHundreds/>
+								
+							</leg:facets>
+			<leg:text><leg:term>social</leg:term></leg:text>
+			
+			<link rel="first" type="application/atom+xml" href="http://www.legislation.gov.uk/search/data.feed?type=primary&amp;text=social&amp;results-count=5"/><link rel="next" type="application/atom+xml" href="http://www.legislation.gov.uk/search/data.feed?type=primary&amp;text=social&amp;results-count=5&amp;page=2"/><entry>
+			<id>http://www.legislation.gov.uk/id/ukpga/1992/7</id>
+			<title>Social Security Contributions and Benefits (Northern Ireland) Act 1992</title>
+			<link rel="self" href="http://www.legislation.gov.uk/id/ukpga/1992/7"/>
+			<link href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29"/>
+			<link rel="alternate" type="application/xml" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.xml" title="XML"/><link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.rdf" title="RDF/XML"/><link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.akn" title="AKN"/><link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.xht" title="HTML snippet"/><link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.html" title="HTML5"/><link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.htm" title="Website (XHTML) Default View"/><link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.csv" title="CSV"/><link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/ukpga/1992/7/2026-04-29/data.pdf" title="PDF"/>
+			<link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml" href="http://www.legislation.gov.uk/ukpga/1992/7/contents?text=social" title="Table of Contents"/>
+			<author><name/></author>
+			<updated>2026-05-15T13:54:02+01:00</updated>
+			<published>1992-02-13T00:00:00+01:00</published>
+			<ukm:DocumentMainType Value="UnitedKingdomPublicGeneralAct"/><ukm:Year Value="1992"/><ukm:Number Value="7"/><ukm:CreationDate Date="1992-02-13"/>
+			
+			
+			<category term="Sheltered employment"/><category term="Benefits"/><category term="Termination of employment"/>
+			<summary>urn:isbn:0105407925</summary>
+		</entry><entry>
+			<id>http://www.legislation.gov.uk/id/ukpga/1992/4</id>
+			<title>Social Security Contributions and Benefits Act 1992</title>
+			<link rel="self" href="http://www.legislation.gov.uk/id/ukpga/1992/4"/>
+			<link href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29"/>
+			<link rel="alternate" type="application/xml" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.xml" title="XML"/><link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.rdf" title="RDF/XML"/><link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.akn" title="AKN"/><link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.xht" title="HTML snippet"/><link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.html" title="HTML5"/><link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.htm" title="Website (XHTML) Default View"/><link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.csv" title="CSV"/><link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/ukpga/1992/4/2026-04-29/data.pdf" title="PDF"/>
+			<link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml" href="http://www.legislation.gov.uk/ukpga/1992/4/contents?text=social" title="Table of Contents"/>
+			<author><name/></author>
+			<updated>2026-05-15T14:14:04+01:00</updated>
+			<published>1992-02-13T00:00:00+01:00</published>
+			<ukm:DocumentMainType Value="UnitedKingdomPublicGeneralAct"/><ukm:Year Value="1992"/><ukm:Number Value="4"/><ukm:ISBN Value="0105404926"/><ukm:CreationDate Date="1992-02-13"/>
+			
+			
+			<category term="Benefits"/><category term="Sheltered employment"/><category term="Sickness and disability benefits"/><category term="Termination of employment"/>
+			<summary>An Act to consolidate certain enactments relating to social security contributions and benefits with amendments to give effect to recommendations of the Law Commission and the Scottish Law Commission.</summary>
+		</entry><entry>
+			<id>http://www.legislation.gov.uk/id/ukpga/1992/5</id>
+			<title>Social Security Administration Act 1992</title>
+			<link rel="self" href="http://www.legislation.gov.uk/id/ukpga/1992/5"/>
+			<link href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06"/>
+			<link rel="alternate" type="application/xml" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.xml" title="XML"/><link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.rdf" title="RDF/XML"/><link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.akn" title="AKN"/><link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.xht" title="HTML snippet"/><link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.html" title="HTML5"/><link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.htm" title="Website (XHTML) Default View"/><link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.csv" title="CSV"/><link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/ukpga/1992/5/2026-04-06/data.pdf" title="PDF"/>
+			<link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml" href="http://www.legislation.gov.uk/ukpga/1992/5/contents?text=social" title="Table of Contents"/>
+			<author><name/></author>
+			<updated>2026-04-15T17:58:06+01:00</updated>
+			<published>1992-02-13T00:00:00+01:00</published>
+			<ukm:DocumentMainType Value="UnitedKingdomPublicGeneralAct"/><ukm:Year Value="1992"/><ukm:Number Value="5"/><ukm:ISBN Value="0105405922"/><ukm:CreationDate Date="1992-02-13"/>
+			
+			
+			<category term="Benefits"/><category term="Maternity pay"/><category term="Disability living allowance"/><category term="Disablement benefit"/><category term="Benefits for parents and children"/>
+			<summary>An Act to consolidate certain enactments relating to the administration of social security and related matters with amendments to give effect to recommendations of the Law Commission and the Scottish Law Commission. </summary>
+		</entry><entry>
+			<id>http://www.legislation.gov.uk/id/anaw/2016/2</id>
+			<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+						<span xml:lang="en">Regulation and Inspection of Social Care (Wales) Act 2016</span> / <span xml:lang="cy">Deddf Rheoleiddio ac Arolygu Gofal Cymdeithasol (Cymru) 2016</span>
+					</div></title>
+			<link rel="self" href="http://www.legislation.gov.uk/id/anaw/2016/2"/>
+			<link href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01"/>
+			<link rel="alternate" type="application/xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.xml" title="XML"/><link rel="alternate" type="application/xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.xml" hreflang="cy" title="XML - Cymru"/><link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.rdf" title="RDF/XML"/><link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.rdf" hreflang="cy" title="RDF/XML - Cymru"/><link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.akn" title="AKN"/><link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.akn" hreflang="cy" title="AKN - Cymru"/><link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.xht" title="HTML snippet"/><link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.xht" hreflang="cy" title="HTML snippet - Cymru"/><link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.html" title="HTML5"/><link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.html" hreflang="cy" title="HTML5 - Cymru"/><link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.htm" title="Website (XHTML) Default View"/><link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.htm" hreflang="cy" title="Website (XHTML) Default View - Cymru"/><link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.csv" title="CSV"/><link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.csv" hreflang="cy" title="CSV - Cymru"/><link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/data.pdf" title="PDF"/><link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/anaw/2016/2/2026-04-01/welsh/data.pdf" hreflang="cy" title="PDF - Cymru"/>
+			<link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml" href="http://www.legislation.gov.uk/anaw/2016/2/contents?text=social" title="Table of Contents"/><link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml" href="http://www.legislation.gov.uk/anaw/2016/2/contents/welsh?text=social" hreflang="cy" title="Table of Contents - Cymru"/>
+			<author><name/></author>
+			<updated>2026-04-29T12:39:12+01:00</updated>
+			<published>2017-10-03T00:00:00+01:00</published>
+			<ukm:DocumentMainType Value="WelshNationalAssemblyAct"/><ukm:Year Value="2016"/><ukm:Number Value="2"/><ukm:ISBN Value="9780348112115"/><ukm:CreationDate Date="2016-01-18"/>
+			
+			
+			
+			<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+						<p xml:lang="en">An Act of the National Assembly for Wales to make provision for the registration and regulation of persons providing care home services, secure accommodation services, residential family centre services, adoption services, fostering services, adult placement services, advocacy services and domiciliary support services; amending the Social Services and Well-being (Wales) Act 2014 in connection with the regulation of the social services functions of local authorities; for the renaming of the Care Council for Wales as Social Care Wales; for Social Care Wales to provide advice and other assistance to persons providing services involving care and support; for the registration, regulation and training of social care workers; and for connected purposes.</p>
+						<p xml:lang="cy">Deddf Cynulliad Cenedlaethol Cymru i wneud darpariaeth ar gyfer cofrestru a rheoleiddio personau sy’n darparu gwasanaethau cartrefi gofal, gwasanaethau llety diogel, gwasanaethau canolfannau preswyl i deuluoedd, gwasanaethau mabwysiadu, gwasanaethau maethu, gwasanaethau lleoli oedolion, gwasanaethau eirioli a gwasanaethau cymorth cartref; sy’n diwygio Deddf Gwasanaethau Cymdeithasol a Llesiant (Cymru) 2014 mewn cysylltiad â rheoleiddio swyddogaethau gwasanaethau cymdeithasol awdurdodau lleol; ar gyfer ailenwi Cyngor Gofal Cymru yn Ofal Cymdeithasol Cymru; i Ofal Cymdeithasol Cymru ddarparu cyngor a chynhorthwy arall i bersonau sy’n darparu gwasanaethau sy’n ymwneud â gofal a chymorth; ar gyfer cofrestru, rheoleiddio a hyfforddi gweithwyr gofal cymdeithasol; ac at ddibenion cysylltiedig.</p>
+					</div></summary>
+		</entry><entry>
+			<id>http://www.legislation.gov.uk/id/ukpga/2012/7</id>
+			<title>Health and Social Care Act 2012</title>
+			<link rel="self" href="http://www.legislation.gov.uk/id/ukpga/2012/7"/>
+			<link href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05"/>
+			<link rel="alternate" type="application/xml" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.xml" title="XML"/><link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.rdf" title="RDF/XML"/><link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.akn" title="AKN"/><link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.xht" title="HTML snippet"/><link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.html" title="HTML5"/><link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.htm" title="Website (XHTML) Default View"/><link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.csv" title="CSV"/><link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/ukpga/2012/7/2026-05-05/data.pdf" title="PDF"/>
+			<link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml" href="http://www.legislation.gov.uk/ukpga/2012/7/contents?text=social" title="Table of Contents"/>
+			<author><name/></author>
+			<updated>2026-05-06T10:53:25+01:00</updated>
+			<published>2012-03-28T08:37:37.718+01:00</published>
+			<ukm:DocumentMainType Value="UnitedKingdomPublicGeneralAct"/><ukm:Year Value="2012"/><ukm:Number Value="7"/><ukm:ISBN Value="9780105407126"/><ukm:CreationDate Date="2012-03-27"/>
+			
+			
+			<category term="Health"/><category term="NHS management"/><category term="Care"/><category term="Primary health care"/><category term="Mental health trusts"/>
+			<summary>An Act to establish and make provision about a National Health Service Commissioning Board and clinical commissioning groups and to make other provision about the National Health Service in England; to make provision about public health in the United Kingdom; to make provision about regulating health and adult social care services; to make provision about public involvement in health and social care matters, scrutiny of health matters by local authorities and co-operation between local authorities and commissioners of health care services; to make provision about regulating health and social care workers; to establish and make provision about a National Institute for Health and Care Excellence; to establish and make provision about a Health and Social Care Information Centre and to make other provision about information relating to health or social care matters; to abolish certain public bodies involved in health or social care; to make other provision about health care; and for connected purposes.</summary>
+		</entry>
+		</feed>

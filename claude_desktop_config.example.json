@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "gg-council-legislation": {
+      "command": "C:\\Users\\Usery\\AppData\\Local\\Microsoft\\WinGet\\Packages\\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe\\uv.exe",
+      "args": [
+        "--directory",
+        "C:\\Users\\Usery\\클로드 코드 실습",
+        "run",
+        "python",
+        "-m",
+        "mcp_server"
+      ]
+    }
+  }
+}

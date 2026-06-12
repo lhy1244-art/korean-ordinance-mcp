@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>경기도의회 입법 지원 도구 — 성안 트랙 데모</title>
+  <meta name="description" content="정책 의도 한 줄로 입법례 스크리닝부터 조례 초안·자동 셀프 점검까지 — Claude 기반 MCP 도구 데모">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand: #3A2266; --brand-light: #EDE7F6; }
+    body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .brand-bg { background-color: var(--brand); }
+    .brand-text { color: var(--brand); }
+    .brand-border { border-color: var(--brand); }
+    .brand-light-bg { background-color: var(--brand-light); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+<!-- =================== HERO =================== -->
+<section class="brand-bg text-white">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-sm uppercase tracking-widest opacity-70 mb-4">
+      바이브코딩 실습 · 2026
+    </div>
+    <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+      경기도의회<br>입법 지원 도구
+    </h1>
+    <p class="text-lg md:text-xl opacity-90 max-w-3xl mb-8 leading-relaxed">
+      정책 의도 한 줄로 — <span class="font-bold">입법례 스크리닝</span> →
+      <span class="font-bold">결정 카드</span> →
+      <span class="font-bold">조례 초안 작성</span> →
+      <span class="font-bold">자동 셀프 점검</span>까지.
+      Claude 기반 MCP 도구가 4단계 워크플로우를 자동화합니다.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <a href="#case" class="bg-white text-purple-900 px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+        케이스 스터디 보기 →
+      </a>
+      <a href="#mentor" class="border-2 border-white border-opacity-50 px-6 py-3 rounded-lg font-semibold hover:bg-white hover:bg-opacity-10 transition">
+        멘토 피드백 적용 결과
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 멘토링 적용 =================== -->
+<section id="mentor" class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+  <div class="text-sm uppercase tracking-widest text-slate-500 mb-3">
+    Mentoring feedback applied
+  </div>
+  <h2 class="text-3xl md:text-4xl font-bold mb-10">멘토링 피드백 → 구현 결과</h2>
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">#1</div>
+      <h3 class="font-bold text-lg mb-2">Claude Code 사용</h3>
+      <p class="text-slate-600">Cowork가 아닌 Claude Code로 전 과정 개발.
+        스케줄링이 아닌 *코드 구축* 작업이라 본 의도에 부합.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">#2</div>
+      <h3 class="font-bold text-lg mb-2">단일 HTML이 아닌 파일 분리</h3>
+      <p class="text-slate-600">
+        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/adapters</code>·
+        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/llm</code>·
+        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/pipeline</code>·
+        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/templates</code> 등 책임별 모듈 분리. 본 페이지는 Vercel 정적 배포.
+      </p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">#3</div>
+      <h3 class="font-bold text-lg mb-2">PDF·HWP는 비-AI 추출</h3>
+      <p class="text-slate-600">pdfplumber·PyMuPDF·kordoc로 텍스트 직접 추출.
+        LLM 토큰 최소화. 스캔 PDF엔 opendataloader 옵션 보유.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl border-2 brand-border bg-purple-50 shadow-sm">
+      <div class="text-xs font-semibold uppercase tracking-wider brand-text mb-2">#4 핵심</div>
+      <h3 class="font-bold text-lg mb-2">검증 에이전트 패턴 적용</h3>
+      <p class="text-slate-700 mb-3">기존 프롬프트 개선이 아닌 *별도 검증 에이전트*로 완성도 향상.
+        본 도구에 이미 <strong>두 군데 적용</strong>되어 있습니다.</p>
+      <ul class="text-sm space-y-1.5 text-slate-700">
+        <li>
+          <span class="brand-bg text-white px-1.5 py-0.5 rounded text-xs font-bold mr-1">A</span>
+          <code class="bg-slate-100 px-1 rounded text-xs">relevance_filter</code> — 1단계 검색에서
+          정책 의도와 무관한 카드를 LLM이 사후 제거 (실제로 일본 결과 2건 자동 제외 사례 확인)
+        </li>
+        <li>
+          <span class="brand-bg text-white px-1.5 py-0.5 rounded text-xs font-bold mr-1">B</span>
+          <code class="bg-slate-100 px-1 rounded text-xs">self_check</code> — 작성 직후 초안의
+          *결정값과 조문 간 모순*을 별도 LLM이 검출
+          (실제로 "도 직영" 결정 vs "민간 위탁" 조항 충돌을 자동 적발)
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 케이스 스터디 헤더 =================== -->
+<section id="case" class="brand-light-bg">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <div class="text-sm uppercase tracking-widest brand-text mb-3 font-semibold">
+      Case study
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">경기도 노인 디지털 격차 해소</h2>
+    <p class="text-slate-700 text-lg max-w-3xl leading-relaxed">
+      정책 주제 한 줄을 입력한 뒤, 4단계 도구가 만들어낸
+      실제 산출물을 모두 다운로드할 수 있습니다. 각 단계는 독립 호출 가능.
+    </p>
+    <div class="mt-6 bg-white border border-slate-200 rounded-lg p-4 inline-flex items-center gap-3">
+      <span class="brand-bg text-white px-2 py-1 rounded text-xs font-bold">정책 의도</span>
+      <code class="text-slate-700">경기도 노인 디지털 격차 해소</code>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 4 단계 카드 =================== -->
+<section class="max-w-6xl mx-auto px-6 py-12 md:py-16 space-y-8">
+
+  <!-- 성안1 -->
+  <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+    <div class="p-6 md:p-8 md:flex md:items-start md:gap-8">
+      <div class="md:w-1/3 mb-4 md:mb-0">
+        <div class="text-xs font-semibold uppercase tracking-wider brand-text mb-2">성안 1 · 발굴</div>
+        <h3 class="text-2xl font-bold mb-2">입법례 스크리닝</h3>
+        <p class="text-slate-500 text-sm">정책 의도 → 5개 관할(한·일·영·EU·미)에서
+          직접/간접 참고 입법례 자동 수집·요약</p>
+      </div>
+      <div class="md:w-2/3">
+        <div class="bg-slate-50 rounded-lg p-4 mb-4 text-sm">
+          <div class="font-semibold mb-2">결과 (실제):</div>
+          <ul class="space-y-1 text-slate-700">
+            <li>• 총 <strong>12건</strong> 수집 (4개 관할 통과 — JP는 관련성 필터로 제외)</li>
+            <li>• <strong>직접 참고 3건</strong>: 대구 남구·북구·대전 서구 노인 생활디지털 교육 조례</li>
+            <li>• 간접 참고 9건: UK·EU·US</li>
+            <li>• 의사결정 가이드: <em>경기도 기존 조례 미검색 → 신규 제정 검토</em></li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <a href="downloads/stage1_입법례_스크리닝.docx" class="brand-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+            ⬇ Word (.docx)
+          </a>
+          <a href="downloads/stage1_입법례_스크리닝.md" class="bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-300">
+            ⬇ Markdown
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 성안2 -->
+  <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+    <div class="p-6 md:p-8 md:flex md:items-start md:gap-8">
+      <div class="md:w-1/3 mb-4 md:mb-0">
+        <div class="text-xs font-semibold uppercase tracking-wider brand-text mb-2">성안 2 · 결정</div>
+        <h3 class="text-2xl font-bold mb-2">결정 카드 추출</h3>
+        <p class="text-slate-500 text-sm">1단계 결과를 토대로 LLM이 *결정해야 할 항목*과 *선택지*를
+          뽑아 객관식으로 제시. 정치적 판단을 AI에 맡기지 않는 안전장치.</p>
+      </div>
+      <div class="md:w-2/3">
+        <div class="bg-slate-50 rounded-lg p-4 mb-4 text-sm">
+          <div class="font-semibold mb-2">7개 결정 카드 추출:</div>
+          <ul class="space-y-1 text-slate-700">
+            <li>• 지원 대상 연령 (3안)</li>
+            <li>• 지원계획 수립 주기 (3안)</li>
+            <li>• 교육 제공 장소·방식 (3안)</li>
+            <li>• 사무 위탁 가능 여부 (2안)</li>
+            <li>• ... + 영향분석지표 자동 평가</li>
+          </ul>
+          <p class="mt-3 text-xs text-slate-500"><strong>환각 방지</strong>: 각 선택지의 *근거 타지자체*는
+            1단계 카드에 실제 등장한 jurisdiction만 인용. 근거 없으면 정직하게 "근거 없음" 표시.</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <a href="downloads/stage2_결정카드.docx" class="brand-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+            ⬇ Word (.docx)
+          </a>
+          <a href="downloads/stage2_결정카드.md" class="bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-300">
+            ⬇ Markdown
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 성안3 - 만들기 -->
+  <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+    <div class="p-6 md:p-8 md:flex md:items-start md:gap-8">
+      <div class="md:w-1/3 mb-4 md:mb-0">
+        <div class="text-xs font-semibold uppercase tracking-wider brand-text mb-2">성안 3 · 만들기</div>
+        <h3 class="text-2xl font-bold mb-2">조례 초안 작성</h3>
+        <p class="text-slate-500 text-sm">결정값과 1단계 모범사례를 LLM 컨텍스트로 넘겨
+          제정안 또는 일부개정안(신·구조문대비표 포함)을 자동 생성.</p>
+      </div>
+      <div class="md:w-2/3 space-y-4">
+        <!-- 제정안 -->
+        <div class="bg-slate-50 rounded-lg p-4 text-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded">제정안</span>
+            <span class="font-semibold">경기도 노인 디지털 격차 해소 지원 조례</span>
+          </div>
+          <ul class="space-y-1 text-slate-700 mb-3">
+            <li>• 조문 <strong>11개</strong> (목적/정의/도지사 책무/지원대상/지원계획/지원사업/교육 운영/시·군 협력/위원회/재원/시행규칙 위임)</li>
+            <li>• 결정값 5개 모두 조문에 정확히 반영 ✅</li>
+            <li>• 대구 모범사례 차용 (3년 단위 지원계획, 인터넷뱅킹·금융사기 방지 교육, 경로당·복지관 다층 인프라)</li>
+          </ul>
+          <a href="downloads/stage3_제정안.docx" class="brand-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+            ⬇ Word (.docx) — 제정안
+          </a>
+        </div>
+        <!-- 개정안 -->
+        <div class="bg-slate-50 rounded-lg p-4 text-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2 py-1 rounded">일부개정안</span>
+            <span class="font-semibold">경기도 노인 디지털 격차 해소 지원 조례 일부개정조례안</span>
+          </div>
+          <ul class="space-y-1 text-slate-700 mb-3">
+            <li>• 개정 의도: <em>도 직영 원칙 유지 + 일부 사무 위탁 가능 조항 신설</em></li>
+            <li>• 변경 <strong>8건</strong> (제3조 제4항 신설 / 제8조의2 신설 / 부칙 등)</li>
+            <li>• <strong>신·구조문대비표</strong> 자동 포함 (현행 / 개정안 / 비고 3열)</li>
+          </ul>
+          <a href="downloads/stage3_개정안_신구조문대비표포함.docx" class="brand-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+            ⬇ Word (.docx) — 일부개정안 + 신·구조문대비표
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 성안4 - 검토 (셀프 점검) -->
+  <article class="bg-white border-2 brand-border rounded-2xl overflow-hidden shadow-md">
+    <div class="p-6 md:p-8 md:flex md:items-start md:gap-8">
+      <div class="md:w-1/3 mb-4 md:mb-0">
+        <div class="text-xs font-semibold uppercase tracking-wider brand-text mb-2">성안 4 · 검토 (셀프)</div>
+        <h3 class="text-2xl font-bold mb-2">자동 셀프 점검</h3>
+        <p class="text-slate-500 text-sm">초안 작성 직후 *별도 LLM 검증 에이전트*가
+          결정값 모순·환각 인용·표준 구조 누락 등을 환기. <em>본격 검토 트랙은 별개</em>.</p>
+      </div>
+      <div class="md:w-2/3">
+        <div class="bg-purple-50 rounded-lg p-4 mb-4 text-sm border brand-border">
+          <div class="font-semibold mb-2 brand-text">검증 에이전트가 발견한 모순 (실제):</div>
+          <blockquote class="border-l-4 brand-border pl-3 italic text-slate-700">
+            "결정값은 대체로 반영되었으나, <strong>제6조제2항 민간 위탁 허용이 '도 직영' 결정과 충돌</strong>
+            가능성(발의자 의도 재확인 필요)..."
+          </blockquote>
+          <p class="mt-3 text-xs text-slate-600">
+            작성자(정책지원관 페르소나)는 셀프 검토가 약하다는 실무 관찰에서 출발 —
+            도구가 자동으로 빠뜨림을 환기.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-lg p-4 mb-4 text-sm">
+          <div class="font-semibold mb-2">셀프 점검 섹션 (조례안 종류에 따라 다름):</div>
+          <ol class="space-y-0.5 text-slate-700 list-decimal list-inside">
+            <li>결정값 반영 점검</li>
+            <li>상위법 명백한 저촉 (sanity)</li>
+            <li>인용 법률·조례 환각 의심</li>
+            <li>표준 구조 누락 (부칙·시행규칙 위임 등)</li>
+            <li>사전 입법영향분석지표 자가평가 (10항목 a~j 표)</li>
+            <li>오탈자·맞춤법 점검</li>
+            <li class="text-purple-900 font-medium">개정안 정합성 점검 — 지시문 ↔ 신·구조문대비표 ↔ 본문 불일치 (개정안 한정)</li>
+          </ol>
+          <p class="mt-3 text-xs text-slate-500">
+            <strong>실제 발견 사례 (개정안)</strong>:
+            「제8조의2 신설로 기존 제8조가 제9조로 밀리는데, 신설 조문 내부 인용 ‘제8조에 따른’이 옛 번호 그대로 — *조문이 자기 자신을 가리키는 순환참조* 위험을 자동 적발」.
+          </p>
+        </div>
+
+        <!-- 제정안용 -->
+        <div class="border-l-4 border-emerald-400 bg-emerald-50 rounded-r-lg p-3 mb-3 text-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded">제정안용</span>
+            <span class="text-slate-600">5+1개 섹션 (1~6번)</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="downloads/stage4_셀프점검_제정안.docx" class="brand-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+              ⬇ Word (.docx)
+            </a>
+            <a href="downloads/stage4_셀프점검_제정안.md" class="bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-300">
+              ⬇ Markdown
+            </a>
+          </div>
+        </div>
+
+        <!-- 개정안용 -->
+        <div class="border-l-4 border-amber-400 bg-amber-50 rounded-r-lg p-3 text-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2 py-1 rounded">개정안용</span>
+            <span class="text-slate-600">5+1+1개 섹션 (1~7번, *정합성 점검 포함*)</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="downloads/stage4_셀프점검_개정안.docx" class="brand-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+              ⬇ Word (.docx)
+            </a>
+            <a href="downloads/stage4_셀프점검_개정안.md" class="bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-300">
+              ⬇ Markdown
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<!-- =================== 기술 스택 =================== -->
+<section class="bg-slate-100 border-y border-slate-200">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-xl font-bold mb-6 text-slate-700">기술 스택</h2>
+    <div class="flex flex-wrap gap-2 text-sm">
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">Python 3.11+</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">FastMCP</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">Claude Sonnet 4.x (Anthropic API)</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">pydantic v2</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">python-docx</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">diskcache</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">국가법령정보센터 OPEN API</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">e-Gov 法令API v2 (일본)</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">legislation.gov.uk</span>
+      <span class="bg-white px-3 py-1.5 rounded border border-slate-200">EUR-Lex · govinfo.gov</span>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 푸터 =================== -->
+<footer class="bg-slate-900 text-slate-400">
+  <div class="max-w-6xl mx-auto px-6 py-10 text-sm space-y-3">
+    <p>⚠️ 본 데모의 모든 산출물은 LLM 보조 결과입니다. 실제 입법 판단은 입법조사관·법제관 검토를 거쳐야 합니다.</p>
+    <p>경기도의회 입법 지원 도구 데모 · 2026.06 · 바이브코딩 실습 과제 제출용 정적 페이지</p>
+  </div>
+</footer>
+
+</body>
+</html>
