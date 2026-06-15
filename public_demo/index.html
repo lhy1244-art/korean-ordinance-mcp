@@ -38,60 +38,6 @@
       <a href="#case" class="bg-white text-purple-900 px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
         케이스 스터디 보기 →
       </a>
-      <a href="#mentor" class="border-2 border-white border-opacity-50 px-6 py-3 rounded-lg font-semibold hover:bg-white hover:bg-opacity-10 transition">
-        멘토 피드백 적용 결과
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- =================== 멘토링 적용 =================== -->
-<section id="mentor" class="max-w-6xl mx-auto px-6 py-16 md:py-20">
-  <div class="text-sm uppercase tracking-widest text-slate-500 mb-3">
-    Mentoring feedback applied
-  </div>
-  <h2 class="text-3xl md:text-4xl font-bold mb-10">멘토링 피드백 → 구현 결과</h2>
-  <div class="grid md:grid-cols-2 gap-5">
-    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-      <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">#1</div>
-      <h3 class="font-bold text-lg mb-2">Claude Code 사용</h3>
-      <p class="text-slate-600">Cowork가 아닌 Claude Code로 전 과정 개발.
-        스케줄링이 아닌 *코드 구축* 작업이라 본 의도에 부합.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-      <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">#2</div>
-      <h3 class="font-bold text-lg mb-2">단일 HTML이 아닌 파일 분리</h3>
-      <p class="text-slate-600">
-        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/adapters</code>·
-        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/llm</code>·
-        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/pipeline</code>·
-        <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm">core/templates</code> 등 책임별 모듈 분리. 본 페이지는 Vercel 정적 배포.
-      </p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-      <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">#3</div>
-      <h3 class="font-bold text-lg mb-2">PDF·HWP는 비-AI 추출</h3>
-      <p class="text-slate-600">pdfplumber·PyMuPDF·kordoc로 텍스트 직접 추출.
-        LLM 토큰 최소화. 스캔 PDF엔 opendataloader 옵션 보유.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl border-2 brand-border bg-purple-50 shadow-sm">
-      <div class="text-xs font-semibold uppercase tracking-wider brand-text mb-2">#4 핵심</div>
-      <h3 class="font-bold text-lg mb-2">검증 에이전트 패턴 적용</h3>
-      <p class="text-slate-700 mb-3">기존 프롬프트 개선이 아닌 *별도 검증 에이전트*로 완성도 향상.
-        본 도구에 이미 <strong>두 군데 적용</strong>되어 있습니다.</p>
-      <ul class="text-sm space-y-1.5 text-slate-700">
-        <li>
-          <span class="brand-bg text-white px-1.5 py-0.5 rounded text-xs font-bold mr-1">A</span>
-          <code class="bg-slate-100 px-1 rounded text-xs">relevance_filter</code> — 1단계 검색에서
-          정책 의도와 무관한 카드를 LLM이 사후 제거 (실제로 일본 결과 2건 자동 제외 사례 확인)
-        </li>
-        <li>
-          <span class="brand-bg text-white px-1.5 py-0.5 rounded text-xs font-bold mr-1">B</span>
-          <code class="bg-slate-100 px-1 rounded text-xs">self_check</code> — 작성 직후 초안의
-          *결정값과 조문 간 모순*을 별도 LLM이 검출
-          (실제로 "도 직영" 결정 vs "민간 위탁" 조항 충돌을 자동 적발)
-        </li>
-      </ul>
     </div>
   </div>
 </section>
